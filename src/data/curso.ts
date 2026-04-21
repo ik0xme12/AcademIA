@@ -4,6 +4,7 @@ export interface Leccion {
   duracion: string;
   tipo: 'lectura' | 'quiz' | 'practica';
   contenido: string;
+  videoUrl?: string; // URL de YouTube o HeyGen embed
   quiz?: {
     pregunta: string;
     opciones: string[];

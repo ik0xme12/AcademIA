@@ -128,6 +128,21 @@ export default function Leccion() {
           </div>
         </div>
 
+        {/* Video */}
+        {leccion.videoUrl && (
+          <div className="mb-6 rounded-2xl overflow-hidden shadow-lg shadow-purple-100 border border-purple-100">
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src={leccion.videoUrl}
+                title={leccion.titulo}
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        )}
+
         {/* Contenido */}
         <div className="bg-white border border-purple-100 rounded-2xl p-6 mb-6">
           {leccion.tipo !== 'quiz' && (
