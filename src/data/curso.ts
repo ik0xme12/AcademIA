@@ -35,6 +35,7 @@ export const modulos: Modulo[] = [
         titulo: '¿Qué es la Inteligencia Artificial?',
         duracion: '5 min',
         tipo: 'lectura',
+        videoUrl: 'https://www.youtube.com/embed/dGvvuXfmU7k',
         contenido: `## ¿Qué es la Inteligencia Artificial?
 
 La **Inteligencia Artificial (IA)** es tecnología que permite a las computadoras realizar tareas que normalmente requieren inteligencia humana, como entender texto, responder preguntas o generar ideas.
